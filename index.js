@@ -18,7 +18,7 @@ const fs = require('fs');
 
 
 app.use(bodyParser.json());
-app.listen(3001,()=>console.log("server is runnig"));
+app.listen(process.env.PORT || 3001,()=>console.log("server is runnig"));
 
 
 
